@@ -1,1 +1,1 @@
-class CreateActor
+class CreateActors < ActiveRecord::Migration
