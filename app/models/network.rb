@@ -4,7 +4,7 @@ class Network < ActiveRecord::Base
   has_many :actors, through: :characters
   
   def build_show
-    
+    "#"
 
   def sorry
     "We're sorry about passing on John Mulaney's pilot"
