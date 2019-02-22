@@ -41,7 +41,7 @@ describe "Actor" do
   it "can build its associated shows through its characters" do
     emilia = Actor.new(:first_name => "Emilia", :last_name => "Clarke")
     khaleesi = Character.new(:name => "Khaleesi")
-    khaleesi.actor = emilia
+    khaleesi.actors = emilia
     got = Show.new(:name => "Game of Thrones")
     khaleesi.show = got
     khaleesi.save
