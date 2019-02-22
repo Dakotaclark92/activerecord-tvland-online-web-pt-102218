@@ -1,4 +1,4 @@
-class CreateCharacters < ActiveRecord::Mirgration[4.2]
+class CreateCharacter < ActiveRecord::Mirgration[4.2]
   
   def change
     create_table :characters do |t|
