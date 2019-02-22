@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 11) do
+ActiveRecord::Schema.define(version: 9) do
 
   create_table "actors", force: :cascade do |t|
     t.string "first_name"
@@ -29,7 +29,12 @@ ActiveRecord::Schema.define(version: 11) do
     t.integer "channel"
   end
 
-# Could not dump table "shows" because of following StandardError
-#   Unknown type 'sting' for column 'build_network'
+  create_table "shows", force: :cascade do |t|
+    t.string "name"
+    t.integer "network_id"
+    t.string "genre"
+    t.string "day"
+    t.string "season"
+  end
 
 end
