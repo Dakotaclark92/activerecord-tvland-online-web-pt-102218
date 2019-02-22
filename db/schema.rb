@@ -25,7 +25,8 @@ ActiveRecord::Schema.define(version: 11) do
   end
 
   create_table "networks", force: :cascade do |t|
-
+    t.string "call_letters"
+    t.integer "channel"
   end
 
 # Could not dump table "shows" because of following StandardError
