@@ -1,4 +1,4 @@
-class CreateActorsTable < ActiveRecord::Migration[4.2]
+class CreateActorsTable < ActiveRecord::Migration
   
   def change
     create_table :actors do |t|
